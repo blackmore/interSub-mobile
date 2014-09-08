@@ -1,0 +1,25 @@
+div.img-logo-connect {
+  position:fixed;
+  top:0px;
+  margin:auto;
+  z-index:100000;
+  height: 43px;
+  width: 160px;
+  background: url("../images/InterSub_Connect@v1x.png") white no-repeat 0 0px;
+}
+.bar {
+  border-bottom: 0px;
+}
+
+.main-body {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.gray {
+  color: gray;
+}
+
+.font-size {
+  width: 200px;
+}
