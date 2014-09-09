@@ -11,46 +11,37 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/ratchet.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <header class="bar bar-nav">
+    <header class="bar bar-nav" id="main-header">
       <div class="img-logo-connect"></div>
       <a class="icon icon-gear pull-right gray" href="#settingsModal"></a>
     </header>
 
     <div class="content main-body" >
+    <!-- /.content put here all the divs to hold and process the puhsed text-->
 
-      <p>This is just a test!</p>
-    </div><!-- /.content -->
+      <div><span class="color1">Some pushed content text in color1 </span><span class="color1">Some more pushed content in color2</span></div>
+    <!-- /.content -->
+    </div>
 
     <!-- Settings modal -->
     <div id="settingsModal" class="modal">
       <header class="bar bar-nav">
-        <a class="icon icon-close pull-right" href="#settingsModal"></a>
+        <a class="icon icon-close pull-right gray" href="#settingsModal"></a>
         <h1 class="title">Settings</h1>
       </header>
 
       <div class="content">
         <ul class="table-view">
           <li class="table-view-cell media">
-            <div class="segmented-control">
-            <a class="control-item active" href="#item1mobile">
-              A
-            </a>
-  <a class="control-item" href="#item2mobile">
-    A
-  </a>
-  <a class="control-item" href="#item3mobile">
-    A
-  </a>
-</div>
-          </li>
-          <li class="table-view-cell media">
             <span class="media-object pull-left icon"><i class="fa fa-moon-o"></i></span>
             <div class="media-body">
               Dark theme
             </div>
-            <div class="toggle">
+            <div class="toggle" id="darkTheme">
               <div class="toggle-handle"></div>
             </div>
           </li>
@@ -75,7 +66,7 @@
           </li>
         </ul>
         <div class="content-padded">
-          <button class="btn btn-positive btn-block">Save settings</button>
+          <button class="btn btn-positive btn-block ">Save settings</button>
         </div>
       </div>
     </div><!-- /.modal -->
